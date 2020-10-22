@@ -1,4 +1,5 @@
 var str = '';
+var count = 0;
 
 function displayData(ch) {
     if (ch == 'AC') {
