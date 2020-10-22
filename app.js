@@ -13,7 +13,7 @@ function displayData(ch) {
         str = JSON.stringify(ans);
         document.getElementById('display-main').innerHTML = ans;
     } else if (ch == '%') {
-        str = eval(str) / 100;
+        str = JSON.stringify(eval(str) / 100);
         document.getElementById('display-main').innerHTML = str;
         document.getElementById('display-operations').innerHTML = str;
     } else {
