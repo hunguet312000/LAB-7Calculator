@@ -10,6 +10,7 @@ function displayData(ch) {
         document.getElementById('display-operations').innerHTML = str;
     } else if (ch == '=') {
         ans = eval(str);
+        str = '(' + str + ')';
         document.getElementById('display-main').innerHTML = ans;
     } else if (ch == '%') {
         str = eval(str) / 100;
